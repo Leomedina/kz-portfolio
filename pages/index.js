@@ -1,12 +1,18 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
-import Nav from "../components/nav";
+import styled from "styled-components";
+import Nav from "../components/Nav";
+
 
 export default function Home() {
   return (
-    <>
+    <GlobalWrapper>
       <Nav />
-      <h1>Hello World</h1>
-    </>
+    </GlobalWrapper>
   );
 }
+
+const GlobalWrapper = styled.div`
+  font-family: "Montserrat Alternates", sans-serif;
+  background-color: white;
+`;
