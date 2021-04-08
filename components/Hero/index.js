@@ -12,7 +12,7 @@ export default function Hero() {
             src="/galaxy.jpg"
             alt="Painting of Galaxy on guash"
             layout="fill"
-          />
+            />
         </ImageWrapper>
         <ImageWrapper>
           <Image
@@ -64,11 +64,13 @@ export default function Hero() {
           />
         </ImageWrapper>
       </GridWrapper>
+      <Line />
     </Wrapper>
   );
 }
 
 const Wrapper = styled.article`
+display: block;
   width: 100%;
   height: 500px;
 `;
@@ -84,14 +86,14 @@ const GridWrapper = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
 `;
 
 const ImageWrapper = styled.div`
   position: relative;
   margin: 12px;
-  height: 450px;
-  width: 400px;
+  height: 400px;
+  width: 350px;
 
   & * {
     object-fit: cover;
