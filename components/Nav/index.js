@@ -1,13 +1,13 @@
-import React from "react";
-import styled from "styled-components";
-import Icon from "../Icon";
+import React from 'react'
+import styled from 'styled-components'
+import Icon from '../Icon'
 
 export default function Nav() {
   return (
     <Wrapper>
-      <div>Kaia Zimmerman - Illustrator</div>
+      <div>Kaia Zimmerman | Illustrator </div>
       <Links>
-        <div>Contact</div>
+        <a>About</a>
         <IconWrapper>
           <a
             href="https://www.instagram.com/kaiaswindow/"
@@ -23,14 +23,15 @@ export default function Nav() {
 }
 
 const Wrapper = styled.nav`
-  background-color: white;
+  background-color: hsla(360, 100%, 100%, 1);
   color: black;
   display: flex;
   justify-content: space-between;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 300;
-  padding: 24px 32px;
-`;
+  padding: 18px 28px;
+  padding-top: 14px; // Visual Centering
+`
 
 const Links = styled.div`
   display: flex;
@@ -38,22 +39,22 @@ const Links = styled.div`
   font-size: 1rem;
 
   & > div {
-    margin-left: 12px;
+    margin-left: 28px;
   }
-`;
+  & a {
+    color: inherit;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  & a:hover{
+    color: hsl(326, 57%, 48%);
+  }
+`
 
 const IconWrapper = styled.div`
   color: inherit;
   margin: auto;
   width: 16px;
   height: 16px;
-
-  & a {
-    color: inherit;
-    text-decoration: none;
-  }
-
-  &:hover{
-    color: hsl(326, 57%, 48%);
-  }
-`;
+`
