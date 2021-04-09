@@ -72,7 +72,7 @@ export default function Hero() {
 const Wrapper = styled.article`
 display: block;
   width: 100%;
-  height: 500px;
+  height: 100%;
 `;
 
 const Line = styled.div`
